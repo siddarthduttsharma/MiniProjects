@@ -1,5 +1,6 @@
 var start = new Date().getTime();
 
+// function responsible for the box movement
 function move() {
     var left = Math.random() * 300 + "px";
     var top = Math.random() * 300 + "px";
@@ -15,6 +16,7 @@ function move() {
     start = new Date().getTime();
 }
 
+// function responsible for the random color of the box
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
@@ -26,6 +28,7 @@ function getRandomColor() {
 
 move();
 
+//Here we are calculating the click time
 document.getElementById("shape").onclick = function() {
     document.getElementById("shape").style.display = "none";
     var end = new Date().getTime();
